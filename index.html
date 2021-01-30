@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="show1">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <form class="f1">
+            <input class="edit" type="button" value="edit">
+            <input class="style" type="button" value="style">
+        </form>
+        <div class="show2">
+            <div class="editBlock">
+                <textarea class="textarea"></textarea>
+                <form>
+                    <input class="add" type="button" value="add">
+                    <input class="save" type="button" value="save">
+                </form>
+            </div>
+            <div class="styleBlock">
+                <form class="textStyle">
+                    <div class="fontSize">
+                        <h4 class="mb6">Font Size:</h4>
+                        <label class="mr16" for="radio1"><input onclick="fontSize()" id="radio1" name="size"
+                                type="radio" value="12px"><span>12px</span></label>
+                        <label class="mr16" for="radio2"><input onclick="fontSize()" id="radio2" name="size"
+                                type="radio" value="14px"><span></span>14px</span></label>
+                        <label class="mr16" for="radio3"><input onclick="fontSize()" id="radio3" name="size"
+                                type="radio" value="16px" checked><span>16px</span></label>
+                        <label class="mr16" for="radio4"><input onclick="fontSize()" id="radio4" name="size"
+                                type="radio" value="18px"><span>18px</span></label>
+                        <label class="mr16" for="radio5"><input onclick="fontSize()" id="radio5" name="size"
+                                type="radio" value="20px"><span>20px</span></label>
+                    </div>
+                    <div class="fontFamily">
+                        <h4 class="mb6 mt13">Font Family:</h4>
+                        <select class="optionBlock">
+                            <option value="">Choose option</option>
+                            <option value="cursive">cursive</option>
+                            <option value="fantasy">fantasy</option>
+                            <option value="monospase">monospase</option>
+                            <option value="sans-serif">sans-serif</option>
+                        </select>
+                    </div>
+                    <div class="color">
+                        <h4 class="mb6 mt13">Colors:</h4>
+                        <form>
+                            <input class="colorText" type="button" value="Color of Text">
+                            <input class="backColor" type="button" value="Background color">
+                        </form>
+                        <div class="colorTabble">
+                            <table class="colors">
+                                <tr>
+                                    <td class="td td1"></td>
+                                    <td class="td td2"></td>
+                                    <td class="td td3"></td>
+                                </tr>
+                                <tr>
+                                    <td class="td td4"></td>
+                                    <td class="td td5"></td>
+                                    <td class="td td6"></td>
+                                </tr>
+                                <tr>
+                                    <td class="td td7"></td>
+                                    <td class="td td8"></td>
+                                    <td class="td td9"></td>
+                                </tr>
+                            </table>
+                            <table class="colorsBG">
+                                <tr>
+                                    <td class="td tdB1"></td>
+                                    <td class="td tdB2"></td>
+                                    <td class="td tdB3"></td>
+                                </tr>
+                                <tr>
+                                    <td class="td tdB4"></td>
+                                    <td class="td tdB5"></td>
+                                    <td class="td tdB6"></td>
+                                </tr>
+                                <tr>
+                                    <td class="td tdB7"></td>
+                                    <td class="td tdB8"></td>
+                                    <td class="td tdB9"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="boldCursive">
+                        <h4 class="mb6 mt13">Style:</h4>
+                        <form action="">
+                            <label class="mr16" for="bold"><input type="checkbox" id="bold" value="Bold"><span>Bold
+                                    text</span></label>
+                            <label class="mr16" for="cursive"><input type="checkbox" id="cursive"
+                                    value="italic"><span>Cursive text</span></label>
+                        </form>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <form class="tableList">
+        <h2 class="mt22 mb6">Choose what you want:</h2>
+        <label class="mr16" for="table"><input onclick="radioLable()" id="table" name="tableList" type="radio"><span>
+                table</span></label>
+        <label class="mr16" for="list"><input onclick="radioList()" id="list" name="tableList"
+                type="radio"><span></span>
+            list</span></label>
+        <div class="table">
+            <div class="countTR countDiv">
+                <span class="countTRSpan countSpan">Count TR:</span>
+                <input type="text" placeholder="Count TR:" class="countTRinput countInput">
+            </div>
+            <div class="countTD countDiv">
+                <span class="countTDSpan countSpan">Count TD:</span>
+                <input type="text" placeholder="Count TD:" class="countTDInput countInput">
+            </div>
+            <h3 class="mt16 mb10">Add style to your table:</h3>
+            <div class="widthOfTD countDiv">
+                <span class="widthOfTDSpan countSpan">Width of TD:</span>
+                <input type="text" placeholder="Width of TD:" class="widthOfTDInput countInput">
+            </div>
+            <div class="heightOfTD countDiv">
+                <span class="heightOfTDSpan countSpan">Height of TD:</span>
+                <input type="text" placeholder="Height of TD:" class="heightOfTDInput countInput">
+            </div>
+            <div class="border">
+                <span class="countSpan">Widht of border:</span>
+                <input type="text" class="widthInput" placeholder="Widht:">
+                <span class="countSpan">Type of border:</span>
+                <select class="typeSelect">
+                    <option value="solid">solid</option>
+                    <option value="dotted">dotted</option>
+                    <option value="dashed">dashed</option>
+                    <option value="double">double</option>
+                    <option value="groove">groove</option>
+                    <option value="ridge">ridge</option>
+                    <option value="outset">outset</option>
+                    <option value="inset">inset</option>
+                </select>
+                <span class="countSpan">Color of border:</span>
+                <select class="colorSelect">
+                    <option value="black">black</option>
+                    <option value="red">red</option>
+                    <option value="blue">blue</option>
+                    <option value="green">green</option>
+                </select>
+            </div>
+            <input type="button" value="Create table" class="createTable mt16">
+        </div>
+        <div class="list">
+            <div class="countLi countDiv">
+                <span class="countLiSpan countSpan">Count Li:</span>
+                <input type="text" placeholder="Count Li:" class="countLiinput countInput">
+            </div>
+            <div class="typeOfMarks countDiv">
+                <span class="typeOfMarksSpan countSpan">Type of marks:</span>
+                <select class="typeOfMarksSelect countInput">
+                    <option value="circle">circle</option>
+                    <option value="disc">disc</option>
+                    <option value="square">square</option>
+                </select>
+            </div>
+            <input type="button" value="Create list" class="createList mt16">
+        </div>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

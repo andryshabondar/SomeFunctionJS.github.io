@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: sans-serif;
+}
+
+.container {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.show1 {
+    width: 835px;
+    height: 250px;
+    background-color: #d5d9dc;
+    border: 1px solid #c2c6c9;
+    margin: 0 auto;
+    border-radius: 3px;
+    margin-top: 22px;
+    padding-left: 32px;
+}
+
+p {
+    margin-top: 22px;
+}
+
+.f1 {
+    width: 105px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit {
+    width: 50px;
+    height: 34px;
+    background-color: #f1ad00;
+    border-radius: 3px;
+    border: none;
+    float: left;
+    outline: none;
+    cursor: pointer;
+}
+
+.edit:active {
+    box-shadow: 0 0 5px 1px #f1ad00;
+}
+
+.style {
+    width: 53px;
+    height: 34px;
+    background-color: #0c97ac;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.style:active {
+    box-shadow: 0 0 5px 1px #0c97ac;
+}
+
+.show2 {
+    width: 835px;
+    height: 260px;
+    background-color: #d5d9dc;
+    border: 1px solid #c2c6c9;
+    margin: 0 auto;
+    border-radius: 3px;
+    margin-top: 7px;
+    padding: 20px;
+    position: relative;
+}
+
+.editBlock {
+    display: none;
+}
+
+.textarea {
+    width: 100%;
+    height: 160px;
+    resize: none;
+    outline: none;
+}
+
+.textarea:focus {
+    box-shadow: 0 0 5px 4px #9bbee8;
+}
+
+.add {
+    width: 50px;
+    height: 36px;
+    color: white;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    background-color: #d62b3d;
+    cursor: pointer;
+}
+
+.add:hover {
+    background-color: #cd1c30;
+}
+
+.save {
+    width: 53px;
+    height: 36px;
+    color: white;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    background-color: #269840;
+    cursor: pointer;
+}
+
+.save:hover {
+    background-color: #1e9136;
+}
+
+.styleBlock {
+    display: none;
+}
+
+.mb6 {
+    margin-bottom: 6px;
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mr16 {
+    margin-right: 16px;
+}
+
+.mt13 {
+    margin-top: 13px;
+}
+.mt22 {
+    margin-top: 22px;
+}
+
+.mt16 {
+    margin-top: 16px;
+}
+
+.optionBlock {
+    outline: none;
+    border-radius: 3px;
+}
+
+.colorText {
+    width: 105px;
+    height: 35px;
+    outline: none;
+    border-radius: 3px;
+    background-color: #636a70;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.colorText:focus {
+    box-shadow: 0 0 4px 1px #636a70;
+}
+
+.colorText:hover {
+    background-color: #4f585f;
+}
+
+.backColor {
+    width: 135px;
+    height: 35px;
+    outline: none;
+    border-radius: 3px;
+    background-color: #636a70;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.backColor:focus {
+    box-shadow: 0 0 4px 1px #636a70;
+}
+
+.backColor:hover {
+    background-color: #4f585f;
+}
+
+.colors {
+    display: none;
+    width: 162px;
+    height: 162px;
+    outline: none;
+    border: 1px solid black;
+    position: absolute;
+    top: 55px;
+    right: 123px;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.colorsBG {
+    display: none;
+    width: 162px;
+    height: 162px;
+    outline: none;
+    border: 1px solid black;
+    position: absolute;
+    top: 55px;
+    right: 123px;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.td {
+    width: 54px;
+    height: 54px;
+    border: 1px solid black;
+}
+
+.td1 {
+    background-color: #d02b3b;
+}
+
+.tdB1 {
+    background-color: #d02b3b;
+}
+
+.c1 {
+    color: #d02b3b;
+}
+
+.td2 {
+    background-color: #0071f6;
+}
+
+.tdB2 {
+    background-color: #0071f6;
+}
+
+.c2 {
+    color: #0071f6;
+}
+
+.td3 {
+    background-color: #1b9c3f;
+}
+
+.tdB3 {
+    background-color: #1b9c3f;
+}
+
+.c3 {
+    color: #1b9c3f;
+}
+
+.td4 {
+    background-color: #2e3339;
+}
+
+.tdB4 {
+    background-color: #2e3339;
+}
+
+.c4 {
+    color: #2e3339;
+}
+
+.td5 {
+    background-color: #edb000;
+}
+
+.tdB5 {
+    background-color: #edb000;
+}
+
+.c5 {
+    color: #edb000;
+}
+
+.td6 {
+    background-color: #dc347f;
+}
+
+.tdB6 {
+    background-color: #dc347f;
+}
+
+.c6 {
+    color: #dc347f;
+}
+
+.td7 {
+    background-color: #ebebeb;
+}
+
+.tdB7 {
+    background-color: #ebebeb;
+}
+
+.c7 {
+    color: #ebebeb;
+}
+
+.td8 {
+    background-color: #663ab5;
+}
+
+.tdB8 {
+    background-color: #663ab5;
+}
+
+.c8 {
+    color: #663ab5;
+}
+
+.td9 {
+    background-color: #0e94af;
+}
+
+.tdB9 {
+    background-color: #0e94af;
+}
+
+.c9 {
+    color: #0e94af;
+}
+
+/*--------------------------------------------------------tableList-----------------------------------------------------*/
+.tableList {
+    display: none;
+    width: 835px;
+    height: 250px;
+    /* height: 422px; */
+    background-color: #d5d9dc;
+    border: 1px solid #c2c6c9;
+    margin: 0 auto;
+    border-radius: 3px;
+    margin-top: 22px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 12px;
+}
+
+.table {
+    display: none;
+    width: 100%;
+}
+
+.countDiv {
+    height: 35px;
+    margin-top: 11px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.countSpan {
+    width: 105px;
+    height: 16px;
+}
+
+.countInput {
+    width: 636px;
+    height: 35px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #c0c4c7;
+    padding-left: 11px;
+}
+
+.countInput:focus {
+    box-shadow: 0 0 5px 4px #9bbee8;
+}
+
+.border {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.widthInput {
+    width: 105px;
+    height: 35px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #c0c4c7;
+    padding-left: 11px;
+}
+
+.widthInput:focus {
+    box-shadow: 0 0 5px 4px #9bbee8;
+}
+
+.typeSelect {
+    width: 105px;
+    height: 35px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #c0c4c7;
+}
+
+.typeSelect:focus {
+    box-shadow: 0 0 5px 4px #9bbee8;
+}
+
+.colorSelect {
+    width: 105px;
+    height: 35px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #c0c4c7;
+}
+
+.colorSelect:focus {
+    box-shadow: 0 0 5px 4px #9bbee8;
+}
+
+.createTable {
+    width: 100px;
+    height: 35px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    background-color: #209c3a;
+    color: white;
+}
+
+.list {
+    display: none;
+    width: 100%;
+}
+
+.createList {
+    width: 100px;
+    height: 35px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    background-color: #209c3a;
+    color: white;
+}
