@@ -1,2 +1,2 @@
-# functional_jS.github.io
+# SomeFunctionjS.github.io
 Second_project
